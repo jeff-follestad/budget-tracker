@@ -60,3 +60,23 @@
 </body>
 
 </html>
+    
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="/.db.js"></script>
+  <script type="text/javascript">
+    (function () {
+      if ("ServiceWorker" in nagivator) {
+        navigator.serviceWorker.register("./service-worker.js", { scope: "/" })
+          .then(() => console.log("Service Worker registered successfully."))
+          .catch(error => console.log("Service Worker registration failed:", error));
+      }
+    })();
+  </script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
