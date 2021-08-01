@@ -1,5 +1,4 @@
 let db;
-
 // request new "budget" db
 const request = indexedDB.open("budget", 1);
 
