@@ -1,6 +1,6 @@
 ## OVERVIEW
 
-Budget Tracker app now provides users with a fast, easy, and reliable way to track their money anywhere or anytime on their mobile device.
+[Budget Tracker](https://www.awesomescreenshot.com/image/11390668?key=947845fbbf5c16465b25a7b49da8f165) app now provides users with a fast, easy, and reliable way to track their money anywhere or anytime on their mobile device.
 
 Budget Tracker's most recent release dramatically improves the user's experience by allowing them to add expenses and deposits to their budget with or without mobile or wi-fi connectivity. 
 
