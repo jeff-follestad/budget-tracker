@@ -4,10 +4,12 @@ const Transaction = require("../models/transaction.js");
 router.post("/api/transaction", ({body}, res) => {
   Transaction.create(body)
     .then(dbTransaction => {
+      console.log("api/transaction response: " + dbTransaction);
       res.json(dbTransaction);
     })
     .catch(err => {
-      res.status(404).json(err);
+      console.log("api/transaction error: " + err);
+      res.status(500).json(err);
     });
 });
 
@@ -17,7 +19,7 @@ router.post("/api/transaction/bulk", ({body}, res) => {
       res.json(dbTransaction);
     })
     .catch(err => {
-      res.status(404).json(err);
+      res.status(500).json(err);
     });
 });
 
@@ -27,7 +29,7 @@ router.get("/api/transaction", (req, res) => {
       res.json(dbTransaction);
     })
     .catch(err => {
-      res.status(404).json(err);
+      res.status(500).json(err);
     });
 });
 
