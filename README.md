@@ -1,3 +1,4 @@
+![Budget Tracker](https://user-images.githubusercontent.com/78771614/127792396-fd3b8416-e042-46a1-9347-0eb2f603d864.png)
 ## OVERVIEW
 
 [Budget Tracker](https://www.awesomescreenshot.com/image/11390668?key=947845fbbf5c16465b25a7b49da8f165) app now provides users with a fast, easy, and reliable way to track their money anywhere or anytime on their mobile device.
