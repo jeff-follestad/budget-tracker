@@ -32,6 +32,6 @@ Satisfies all of the preceding acceptance criteria plus the following:
 
 ## LICENSE
 
-This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.
+This project is licensed under the MIT License - see the [License](https://opensource.org/licenses/MIT) file for details.
 
 
