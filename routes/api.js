@@ -9,7 +9,7 @@ router.post("/api/transaction", ({body}, res) => {
     })
     .catch(err => {
       console.log("api/transaction error: " + err);
-      res.status(500).json(err);
+      res.status(500).json({error: err});
     });
 });
 
@@ -19,7 +19,7 @@ router.post("/api/transaction/bulk", ({body}, res) => {
       res.json(dbTransaction);
     })
     .catch(err => {
-      res.status(500).json(err);
+      res.status(500).json({error: err});
     });
 });
 
@@ -29,7 +29,7 @@ router.get("/api/transaction", (req, res) => {
       res.json(dbTransaction);
     })
     .catch(err => {
-      res.status(500).json(err);
+      res.status(500).json({error: err});
     });
 });
 
