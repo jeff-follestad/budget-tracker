@@ -15,13 +15,15 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+let databaseUrl = process.env.MONGODB_URI || "mongodb://localhost/budget";
+console.log("Connecting to database: " + databaseUrl)
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost/budget",
+  .connect(databaseUrl,
     {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindAndModify: false
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false
     }
   )
   .then(() => console.log("Database connected!"))
