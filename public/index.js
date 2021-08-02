@@ -8,7 +8,7 @@ fetch("/api/transaction")
   .then(data => {
     // save db data on global variable
     if (data) {
-      console.log("Got transactions: " + data);
+      console.log("Got transactions: " + JSON.stringify(data, null, 4));
       transactions = data;
     } else {
       transactions = [];
